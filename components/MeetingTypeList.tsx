@@ -11,7 +11,7 @@ import { useUser } from "@clerk/nextjs";
 //import Loader from "./Loader";
 import { Textarea } from "./ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-//import ReactDatePicker from "react-datepicker";
+import ReactDatePicker from "react-datepicker";
 import { Input } from "./ui/input";
 
 const initialValues = {
@@ -121,7 +121,7 @@ const MeetingTypeList = () => {
             <label className="text-base font-normal leading-[22.4px] text-sky-2">
               Select Date and Time
             </label>
-            {/* <ReactDatePicker
+            <ReactDatePicker
               selected={values.dateTime}
               onChange={(date) => setValues({ ...values, dateTime: date! })}
               showTimeSelect
@@ -130,7 +130,7 @@ const MeetingTypeList = () => {
               timeCaption="time"
               dateFormat="MMMM d, yyyy h:mm aa"
               className="w-full rounded bg-dark-3 p-2 focus:outline-none"
-            /> */}
+            />
           </div>
         </MeetingModal>
       ) : (
